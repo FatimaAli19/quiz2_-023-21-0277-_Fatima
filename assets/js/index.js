@@ -20,11 +20,11 @@ const persons=[
 		personIncome: "3000000"
 	}
 ]
-function printPerson(person) {
+function printDetails(person) {
         console.log(`Person ${person.id} name is ${person.personName} having salary ${person.personIncome}`);
       }
       for (const person of persons) {
-        printPerson(person);
+        printDetails(person);
       }
       // task3
       const men = {
@@ -33,11 +33,12 @@ function printPerson(person) {
         personAge: "23",
         personIncome: "2000000"
       };
-      
+      function printproperties(men){
       const keys = Object.keys(men);
-      
       console.log("Properties are below:");
       for (const key of keys) {
         console.log(key);
       }
+      }
+      printproperties(men);
       
