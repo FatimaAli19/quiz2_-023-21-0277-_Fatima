@@ -26,3 +26,18 @@ function printPerson(person) {
       for (const person of persons) {
         printPerson(person);
       }
+      // task3
+      const men = {
+        id: 1,
+        personName: "Fahad",
+        personAge: "23",
+        personIncome: "2000000"
+      };
+      
+      const keys = Object.keys(men);
+      
+      console.log("Properties are below:");
+      for (const key of keys) {
+        console.log(key);
+      }
+      
